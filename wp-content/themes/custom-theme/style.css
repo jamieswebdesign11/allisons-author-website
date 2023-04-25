@@ -1,0 +1,61 @@
+/*Theme Name: Custom Theme*/
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Infant&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Assistant&display=swap');
+
+/* General Styles */
+body{background: #ccc;font-family: 'Assistant', sans-serif;font-size:18px;position: absolute;height:100%;width:100%;}
+body.no-scroll{overflow-y:hidden;}
+.full-page{display: flex;position: relative;flex-flow:column;}
+.full-page-content {background: #ccc;flex-grow: 1;}
+h1, h2{font-family: 'Cormorant Infant', serif;}
+h1:after, h2:after{content:'';width:50px;height:2px;background:#005863;position:relative;display:block;margin: 15px auto;}
+
+/* Header and Nav */
+#header {background: #ccc;box-shadow: 0 0 10px #000;border-bottom: 5px solid #005863;}
+.menu{list-style:none;padding:0;text-align:center;}
+.menu li{padding:10px 0;}
+.menu li a{font-family: 'Cormorant Infant', serif;color:#000;font-weight:normal;font-size:28px;letter-spacing:2px;}
+.menu li a:hover, .dropdown-menu a:hover{background:transparent;color:#005863;}
+.dropdown-menu{position:relative;box-shadow:none;border:none;width:100%;text-align:center;display:block;background:transparent;float:none;}
+.dropdown-toggle .caret{display:none;}
+.dropdown-menu li{padding:5px 0!important;}
+.dropdown-menu a{font-size:24px!important;padding:5px 0!important;}
+.dropdown:hover .dropdown-menu{animation:none;}
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover{background:transparent;}
+.mobile-menu-toggle{display:none;}
+
+/* Banner */
+#banner {border-bottom: 15px solid #005863;}
+#banner:before{content:'';position:absolute;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,.4);}
+.caption{font-family: 'Cormorant Infant', serif; font-size:100px; position:absolute; top:50%; left:0; width:100%; text-align:center; transform:translateY(-50%); color:#fff;}
+
+/* Home Page */
+#main{padding:50px 0;text-align:center;}
+.image-link img {margin: 0 auto;max-width:300px;border-radius:10px;box-shadow:0 0 5px #000;transition:all ease .7s;}
+.image-link a:hover img {box-shadow:none;transition:all ease .7s;}
+#newsletter-signup {text-align: center;padding: 10px 0;}
+#newsletter-signup form {max-width: 500px;margin:0 auto;}
+#newsletter-signup form .af-field, #newsletter-signup form .af-submit{padding:5px;}
+#newsletter-signup form .af-submit button{color:#fff;padding:10px 0;background: #005863;}
+#newsletter-signup form .af-submit button:hover {background:#000;}
+
+/* About Page */
+#about-main{padding: 50px 0;}
+#about-main h1:after {margin: 15px 0;}
+.about-main-img, .main-about-content {padding:0 15px;}
+.about-main-img img {width: 100%;}
+
+/* Form Styles */
+form .af-field, form .af-submit{padding:5px!important;}
+form .af-submit button{width:100%;border:none;text-transform:uppercase;font-weight:bold;letter-spacing:2px;font-size:20px;transition:all ease .7s;color:#fff;padding:10px 0;background: #005863;}
+form .af-submit button:hover {background:#000;transition:all ease .7s;}
+.acf-fields>.acf-field{border:none!important;text-align:left;}
+.acf-field .acf-label label{display:none!important;}
+.acf-field .acf-input{color:#000;}
+
+
+/* Resonpsive Styles */
+@media screen and (max-width:1500px){.dropdown-menu a{font-size:18px!important;}}
+@media screen and (max-width:1200px){#main{padding:30px 30px 0 30px;}.caption{font-size:68px;bottom:10px;right:20px;}}
+@media screen and (max-width:991px){.menu li a{font-size:22px;}.mobile-menu-toggle{display:block;z-index:10;position:absolute;padding:0 15px;font-size:40px;}.mobile-menu-toggle>span:hover{cursor:pointer;}#header {position: relative;} #menu-main-menu > li{padding: 15px 10px;}.about-main-img img {width:auto;margin: 0 auto;padding-bottom: 30px;}#about-main {text-align: center;}#about-main h1:after {margin: 15px auto;}}
+@media screen and (max-width:767px){.caption{font-size:36px;}#main{padding:15px;}}

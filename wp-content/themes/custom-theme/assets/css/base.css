@@ -1,0 +1,23 @@
+/* Default Font */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/* Default Styles */
+html, body {margin:0;font-size:14px;font-family: 'Open Sans', sans-serif;}
+p {margin:20px 0;line-height:1.75em;}
+a {text-decoration:none;font-weight:bold;transition:all ease .7s;}
+a:hover, a:focus {text-decoration:none;transition:all ease .7s;}
+.btn {transition:all ease .7s;}
+.btn:hover, .btn:focus {transition:all ease .7s;}
+h1 {font-size:36px;margin:0;}
+h2 {font-size:26px;margin:0;}
+h3 {font-size:20px;margin:0;}
+#menu-main-menu{list-style:none;padding:0;margin:0;}
+#menu-main-menu > li{display:inline-block;padding:15px 20px;}
+.dropdown-menu {margin-top:-2px;box-shadow:none;border-radius:0px;padding:0;background-color:#fff;border-top:2px solid #000;}
+.dropdown:hover .dropdown-menu{-webkit-animation-name: fadeIn;-moz-animation-name: fadeIn; -o-animation-name: fadeIn;animation-name: fadeIn; -webkit-animation-duration: 1s;-moz-animation-duration: 1s;-o-animation-duration: 1s;animation-duration: 1s;display: block;}
+.dropdown-menu>li>a{transition:all ease 1s;font-size:14px;padding:10px;}
+.dropdown-menu>li>a:hover{transition:all ease 1s;}
+/*Banner*/
+#banner{position:relative;overflow:hidden;}
+#banner img{width:100%;}
+/* = MEDIA QUERIES= */
+@media screen and ( max-width: 767px ) {img.pull-left {float:none !important;margin:0 auto;} img.pull-right {float:none !important;margin:0 auto;}}
